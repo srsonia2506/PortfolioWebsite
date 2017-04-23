@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Sonia's Portfolio</title>
+		<meta name="description" content="Portfolio of Sonia">
+		<meta name="author" content="Saravanan Sonia">
+		<meta name="viewport" content="width=500, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Ranga" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+
+		<h2>Default</h2>
+		<div class="thumb kort">
+			<img src="http://placeimg.com/200/201/nature" width="200" height="200">
+			<img src="http://placeimg.com/200/202/nature" width="200" height="200">
+			<img src="http://placeimg.com/200/203/nature" width="200" height="200">
+			<img src="http://placeimg.com/200/204/nature" width="200" height="200">
+			<img src="http://placeimg.com/200/205/nature" width="200" height="200">
+			<img src="http://placeimg.com/200/206/nature" width="200" height="200">
+			<img src="http://placeimg.com/200/207/nature" width="200" height="200">
+			<img src="http://placeimg.com/200/208/nature" width="200" height="200">
+			<img src="http://placeimg.com/200/209/nature" width="200" height="200">
+		</div>
+
+		<script src="js/main.js"></script>
+
+		<script>
+			// FF OS X animates this at 3-4 FPS when there are box-shadows
+			// on the images, hence the hack... Ugh :/
+			if( navigator.userAgent.match( /firefox/gi ) ) {
+				[].slice.call( document.querySelectorAll( '.thumb img' ) ).forEach(function( el ) { el.style.boxShadow = 'none'; });
+			}
+		</script>
+
+		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+	</body>
+</html>
