@@ -1,328 +1,590 @@
-<!doctype html>
-<html lang="en">
-
-	<head>
-		<meta charset="utf-8">
-		<title>Sonia's Portfolio</title>
-		<meta name="description" content="Portfolio of Sonia">
-		<meta name="author" content="Saravanan Sonia">
-		<meta name="viewport" content="width=500, user-scalable=no">
-    		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Ranga" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-
-	<body>
-
-		<h2>Default</h2>
-		<div class="thumb kort">
-			<img src="http://placeimg.com/200/201/nature" width="200" height="200">
-			<img src="http://placeimg.com/200/202/nature" width="200" height="200">
-			<img src="http://placeimg.com/200/203/nature" width="200" height="200">
-			<img src="http://placeimg.com/200/204/nature" width="200" height="200">
-			<img src="http://placeimg.com/200/205/nature" width="200" height="200">
-			<img src="http://placeimg.com/200/206/nature" width="200" height="200">
-			<img src="http://placeimg.com/200/207/nature" width="200" height="200">
-			<img src="http://placeimg.com/200/208/nature" width="200" height="200">
-			<img src="http://placeimg.com/200/209/nature" width="200" height="200">
-		</div>
-
-		<script src="js/main.js"></script>
-
-		<script>
-			// FF OS X animates this at 3-4 FPS when there are box-shadows
-			// on the images, hence the hack... Ugh :/
-			if( navigator.userAgent.match( /firefox/gi ) ) {
-				[].slice.call( document.querySelectorAll( '.thumb img' ) ).forEach(function( el ) { el.style.boxShadow = 'none'; });
-			}
-		</script>
-
-		<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-
-	</body>
-</html>
-
-
-
-
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
-	<head>
+<head>
+  <meta charset="utf-8">
+  <title>Kross | Portfolio Template</title>
 
-		<meta charset="UTF-8">
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
 
-		<title>Progress Nav</title>
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-		<meta name="description" content="">
-		<meta name="author" content="Hakim El Hattab">
+</head>
 
-		<meta name="viewport" content="width=700, user-scalable=no" />
+<body>
+  
 
-		<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Roboto" rel="stylesheet">
-		<link href="normalize.css" rel="stylesheet" type="text/css" />
-		<link href="style.css" rel="stylesheet" type="text/css" />
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand font-tertiary h3" href="index.html"><img src="images/logo.png" alt="Myself"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-	</head>
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
-	<body>
+<!-- hero area -->
+<section class="hero-area bg-primary" id="parallax">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 mx-auto">
+        <h1 class="text-white font-tertiary">Hi! I’m <br> Christoher <br> UX designer</h1>
+      </div>
+    </div>
+  </div>
+  <div class="layer-bg w-100">
+    <img class="img-fluid w-100" src="images/illustrations/leaf-bg.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l2">
+    <img src="images/illustrations/dots-cyan.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l3">
+    <img src="images/illustrations/leaf-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l4">
+    <img src="images/illustrations/dots-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l5">
+    <img src="images/illustrations/leaf-yellow.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l6">
+    <img src="images/illustrations/leaf-cyan.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l7">
+    <img src="images/illustrations/dots-group-orange.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l8">
+    <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape">
+  </div>
+  <div class="layer" id="l9">
+    <img src="images/illustrations/leaf-cyan-2.png" alt="bg-shape">
+  </div>
+  <!-- social icon -->
+  <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+    <li class="mb-3"><a class="text-white" href="#"><i class="ti-facebook"></i></a></li>
+    <li class="mb-3"><a class="text-white" href="#"><i class="ti-instagram"></i></a></li>
+    <li class="mb-3"><a class="text-white" href="#"><i class="ti-dribbble"></i></a></li>
+    <li class="mb-3"><a class="text-white" href="#"><i class="ti-twitter"></i></a></li>
+  </ul>
+  <!-- /social icon -->
+</section>
+<!-- /hero area -->
 
-		<nav class="toc">
-			<ul>
-				<li><a href="#intro">Intro</a></li>
-				<li>
-					<a href="#dev">Developer Mode</a>
-					<ul>
-						<li><a href="#dev-edit-html">Edit HTML</a></li>
-						<li><a href="#dev-element-classes">Element Classes</a></li>
-						<li><a href="#dev-slide-classes">Slide Classes</a></li>
-						<li><a href="#dev-export-html">Export HTML</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#css">CSS Editor</a>
-					<ul>
-						<li><a href="#css-fonts">Custom Fonts</a></li>
-						<li><a href="#css-developer-mode">Developer Mode</a></li>
-						<li><a href="#css-examples">Examples</a></li>
-					</ul>
-				</li>
-			</ul>
-			<svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-				<path stroke="#444" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
-			</svg>
-		</nav>
+<!-- about -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <p class="font-secondary paragraph-lg text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <a href="about.html" class="btn btn-transparent">know more</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->
 
-		<article class="contents">
-			<section id="intro">
-				<h2>Progress Nav</h2>
-				<p>
-					This page demonstrates an idea for how progress can be visualized inside of a standard page nav. Scroll the page and note how the marker animates to highlight all of the sections that are currently on screen.
-				</p>
-				<p>
-					The rest of the content below is taken from <a href="https://slides.com/developers" target="_top">slides.com/developers</a>. Take a look at that to see how the progress nav looks on a real page.
-				</p>
-				<p>
-					Created by Hakim El Hattab | <a href="http://hakim.se" target="_top">hakim.se</a> | <a href="http://twitter.com/hakimel" target="_top">@hakimel</a>
-				</p>
-				<h2>Slides for Developers</h2>
-				<p>
-					We strive to make Slides a great and flexible tool for developers. Presentations created on Slides are HTML documents under the hood, so generally anything that HTML can do, Slides can do. We make it easy to access and edit the underlying HTML and CSS through the <a href="#dev">Developer Mode</a>.
-				</p>
-				<p>
-					There's also an API for creating new presentations with preset content and we're aiming to add additional APIs in the future.
-				</p>
-			</section>
+<!-- skills -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
+            <div class="wave" data-progress="90%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Web Design (90%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
+            <div class="wave" data-progress="60%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Logo Design (60%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
+            <div class="wave" data-progress="80%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">After Effects (80%)</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="card shadow text-center">
+          <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
+            <div class="wave" data-progress="70%"></div>
+          </div>
+          <div class="card-footer bg-white">
+            <h4 class="card-title">Web App (70%)</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /skills -->
 
-			<section>
-				<div id="dev">
-					<h2>Developer Mode</h2>
-					<p>
-						The Slides editor has a developer mode which is useful if you know a bit of HTML and CSS. With this mode active you will be able to modify the underlying HTML of your deck, allowing you to make adjustments that the Slides editor does not provide interface options for.
-					</p>
-					<p>
-						To enable the developer mode open the editor settings in the bottom left corner:
-					</p>
+<!-- experience -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-1.png" alt="icon">
+        <p class="mb-0">Jan 2007 - Feb 2009</p>
+        <h4>Junior UX Designer</h4>
+        <h6 class="text-light">WEBEX</h6>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-2.png" alt="icon">
+        <p class="mb-0">Mar 2009 - Aug 2014</p>
+        <h4>UX & UI Designer</h4>
+        <h6 class="text-light">AUGMEDIX</h6>
+      </div>
+      <div class="col-lg-3 col-md-4 text-center">
+        <img src="images/experience/icon-3.png" alt="icon">
+        <p class="mb-0">Sep 2014 - Present</p>
+        <h4>Senior UI Designer</h4>
+        <h6 class="text-light">THEMEFISHER</h6>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./experience -->
 
-					<img class="developer-image" src="http://static.slid.es.s3.amazonaws.com/site/developers/slides-developer-mode-1.png">
-				</div>
+<!-- education -->
+<section class="section position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2006</p>
+            <h4>Marters in UX Design</h4>
+            <p class="mb-0 text-light">Masassusets Institute of Technology</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2004</p>
+            <h4>Honours in Fine Arts</h4>
+            <p class="mb-0 text-light">Harvard University</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">2000</p>
+            <h4>Higher Secondary Certificat</h4>
+            <p class="mb-0 text-light">Cardiff School</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-80">
+        <div class="d-flex">
+          <div class="mr-lg-5 mr-3">
+            <i class="ti-medall icon icon-light icon-bg bg-white shadow rounded-circle d-block"></i>
+          </div>
+          <div>
+            <p class="text-dark mb-1">1998</p>
+            <h4>Secondary School Certificate</h4>
+            <p class="mb-0 text-light">Cardiff School</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bg image -->
+  <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+</section>
+<!-- /education -->
 
-				<div id="dev-edit-html">
-					<h3>Editing HTML</h3>
-					<p>
-						The per-slide HTML editor can be accessed from the slide options area. It gives you raw access to the current slide's HTML, allowing you to change anything you like. Note that some elements, such as &lt;script&gt; and &lt;link&gt;, are not allowed for security reasons.﻿
-					</p>
+<!-- services -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Services</h2>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card hover-shadow shadow">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-palette icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">UI Design</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card active-bg-primary hover-shadow shadow">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-vector icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">UX Design</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card hover-shadow shadow">
+          <div class="card-body text-center px-4 py-5">
+            <i class="ti-panel icon mb-5 d-inline-block"></i>
+            <h4 class="mb-4">Interaction Design</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /services -->
 
-					<img class="developer-image" src="http://static.slid.es.s3.amazonaws.com/site/developers/slides-developer-mode-2.png">
-				</div>
+<!-- portfolio -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Portfolio</h2>
+      </div>
+    </div>
+    <div class="row shuffle-wrapper">
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/item-1.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/item-2.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/item-3.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/item-4.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-6 mb-4 shuffle-item">
+        <div class="position-relative rounded hover-wrapper">
+          <img src="images/portfolio/item-5.png" alt="portfolio-image" class="img-fluid rounded w-100">
+          <div class="hover-overlay">
+            <div class="hover-content">
+              <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /portfolio -->
 
-				<div id="dev-element-classes">
-					<h3>Element Classes <a href="/pricing" class="header-secondary-text">(Requires Pro)</a></h3>
-					<p>
-						As a paying Slides customer you have access to the <a href="#css">CSS editor</a> which allows you to add custom styles to your deck. By turning on the developer mode a new "class name" field will appear for any block that you focus. This allows you to easily target a specific element with your CSS.
-					</p>
-					<p>
-						Here's an example that defines an "upside-down" class using custom CSS and applies it to a text block.
-					</p>
-					<pre class="code-block" data-highlight-theme="github-gist"><code class="hljs css">.upside-down {
-		transform: scale( 1, -1 );
-}</code></pre>
+<!-- testimonial -->
+<section class="section bg-primary position-relative testimonial-bg-shapes">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title text-white mb-5">Testimonials</h2>
+      </div>
+      <div class="col-lg-10 mx-auto testimonial-slider">
+        <!-- slider-item -->
+        <div class="text-center testimonial-content">
+          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+          <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/testimonial/client-1.png"
+            alt="client-image">
+          <h4 class="text-white">Jesica Gomez</h4>
+          <h6 class="text-light mb-4">CEO, Funder</h6>
+        </div>
+        <!-- slider-item -->
+        <div class="text-center testimonial-content">
+          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+          <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation
+              ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in
+            voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.</p>
+          <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/testimonial/client-1.png"
+            alt="client-image">
+          <h4 class="text-white">Jesica Gomez</h4>
+          <h6 class="text-light mb-4">CEO, Funder</h6>
+        </div>
+        <!-- slider-item -->
+        <div class="text-center testimonial-content">
+          <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
+          <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud exercitation
+              ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in reprehenderit in
+            voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur.</p>
+          <img class="img-fluid rounded-circle mb-4 d-inline-block" src="images/testimonial/client-1.png"
+            alt="client-image">
+          <h4 class="text-white">Jesica Gomez</h4>
+          <h6 class="text-light mb-4">CEO, Funder</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- bg shapes -->
+  <img src="images/backgrounds/map.png" alt="map" class="img-fluid bg-map">
+  <img src="images/illustrations/dots-group-v.png" alt="bg-shape" class="img-fluid bg-shape-1">
+  <img src="images/illustrations/leaf-orange.png" alt="bg-shape" class="img-fluid bg-shape-2">
+  <img src="images/illustrations/dots-group-sm.png" alt="bg-shape" class="img-fluid bg-shape-3">
+  <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape" class="img-fluid bg-shape-4">
+  <img src="images/illustrations/leaf-cyan.png" alt="bg-shape" class="img-fluid bg-shape-5">
+</section>
+<!-- /testimonial -->
 
-					<img class="developer-image" src="http://static.slid.es.s3.amazonaws.com/site/developers/slides-developer-mode-3.png">
-				</div>
+<!-- client logo slider -->
+<section class="section pb-0">
+  <div class="container">
+    <div class="client-logo-slider d-flex align-items-center">
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-1.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-2.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-3.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-4.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-5.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-1.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-2.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-3.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-4.png" alt="client-logo"></a>
+      <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+          src="images/clients-logo/client-logo-5.png" alt="client-logo"></a>
+    </div>
+  </div>
+</section>
+<!-- /client logo slider -->
 
-				<div id="dev-slide-classes">
-					<h3>Slide Classes <a href="/pricing" class="header-secondary-text">(Requires Pro)</a></h3>
-					<p>
-						Just like you can add custom classes to individual elements it's also possible to add custom classes at the slide level. This can used to apply broader changes to the whole slide like inverting text and icon colors or changing the slide transition.
-					</p>
-					<img class="developer-image" src="http://static.slid.es.s3.amazonaws.com/site/developers/slides-developer-mode-4.png">
-					<p>
-						Under the hood the slide background element is separate from the slide itself. Here are two examples showing how you'd target the slide contents or slide background using a custom class called "night-sky":
-					</p>
+<!-- blog -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Blogs</h2>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="images/blog/post-3.jpg" alt="post-thumb">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
+            </h4>
+            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="images/blog/post-4.jpg" alt="post-thumb">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
+            </h4>
+            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="images/blog/post-2.jpg" alt="post-thumb">
+          <div class="card-body">
+            <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5 Million</a>
+            </h4>
+            <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              dolore magna aliqua.</p>
+            <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /blog -->
 
-					<pre class="code-block" data-highlight-theme="github-gist"><code class="hljs css">// Targets the slide contents
-.slides .night-sky svg path {
-		fill: yellow;
-}
+<!-- contact -->
+<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Info</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          <h4 class="mb-80">Contact Form</h4>
+          <form action="#" class="row">
+            <div class="col-md-6">
+              <input type="text" id="name" name="name" placeholder="Full Name" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
+            </div>
+            <div class="col-12">
+              <textarea name="message" id="message" class="form-control px-0 mb-4"
+                placeholder="Type Message Here"></textarea>
+            </div>
+            <div class="col-lg-6 col-10 mx-auto">
+              <button class="btn btn-primary w-100">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /contact -->
 
-// Target the slide background
-.backgrounds .night-sky {
-		background: linear-gradient(0deg, #141528, #0b1bb2);
-}</code></pre>
+<!-- footer -->
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary">steve.fruits@email.com</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary">+880 2544 658 256</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">125/A, CA Commercial Area, California, USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Copyright ©<script>
+        var CurrentYear = new Date().getFullYear()
+        document.write(CurrentYear)
+      </script> a theme by <a href="https://themefisher.com">themefisher.com</a></p>
+  </div>
+</footer>
+<!-- /footer -->
 
-					<img class="developer-image" src="http://static.slid.es.s3.amazonaws.com/site/developers/slides-developer-mode-5.png">
-				</div>
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- filter -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
 
-				<div id="dev-export-html">
-					<h3>Export HTML</h3>
-					<p>
-						You can access the complete HTML for all slides in your deck ﻿inside of the export panel, under "Export to reveal.js"﻿. This provides a way of exporting your deck markup and the core Slides styles to reveal.js. There are a few limitations with exporting this way but it should provide a good starting point.
-					</p>
+<!-- Main Script -->
+<script src="js/script.js"></script>
 
-					<img class="developer-image" src="http://static.slid.es.s3.amazonaws.com/site/developers/slides-developer-mode-6.png">
-				</div>
-
-			</section>
-
-			<section>
-				<div id="css">
-					<h2>CSS Editor <a href="/pricing" class="header-secondary-text">(Requires Pro)</a></h2>
-					<p>
-						The CSS editor lets you author custom styles for your presentation with a real-time preview of the result. It's available as an option inside of the Style panel of the presentation editor.
-					</p>
-					<p>
-						The editor preprocesses styles using <a href="http://lesscss.org/">LESS</a>, though you're free to write plain CSS as well. We apply the styles in real-time as you type so there's no need to leave the editor or even press a refresh button to see what you're getting. Note that when your styles are saved they will be automatically wrapped in a ".reveal {}" selector to avoid conflicts with other page styles.
-					</p>
-				</div>
-				<div id="css-fonts">
-					<h3>Custom Fonts</h3>
-					<p>
-						You can load custom fonts from Typekit and Google fonts and apply them using custom CSS. <a href="http://help.slides.com/knowledgebase/articles/1077976-custom-fonts-pro">Find out more</a>.
-					</p>
-				</div>
-				<div id="css-developer-mode">
-					<h3>Developer Mode</h3>
-					<p>
-						If you turn on the <a href="#dev">developer mode</a> you can also add custom classes to any focused element. This is a convenient way to easily apply your CSS to specific elements.
-					</p>
-				</div>
-
-				<div id="css-examples">
-					<h3>Examples</h3>
-					<pre class="code-block" data-highlight-theme="github-gist"><code class="hljs css">// Change presentation background
-&amp; {
-		background: #a83239;
-}
-
-// Change color of body text
-.slides {
-		color: #009999;
-}
-
-// Turn text white if the slide has a dark background
-.has-dark-background {
-		color: #fff;
-}
-
-// Add a blue border to all slides (each slide is a &lt;section&gt;)
-.slides section {
-		outline: 1px solid blue;
-}
-
-// Add a red border to all vertical stacks of slides
-.slides section.stack {
-		outline: 1px solid red;
-}<br>
-// Include a custom font<br>@font-face {<br>&nbsp; font-family: "Cabin Sketch";<br>&nbsp; src: url("https://s3.amazonaws.com/static.slid.es/fonts/cabinsketch/cabinsketch-regular.woff") format("woff"),<br>&nbsp; &nbsp; &nbsp; &nbsp;url("https://s3.amazonaws.com/static.slid.es/fonts/cabinsketch/cabinsketch-regular.ttf") format("truetype");<br>}
-<br>.slides h1, .slides h2, .slides h3 {<br>&nbsp; &nbsp; font-family: "Cabin Sketch";<br>}
-
-
-// Change color of controls and progress bar
-﻿@interactiveColor: rgb(200,105,119);
-
-.progress span {
-		background: @interactiveColor !important;
-}
-
-.controls .navigate-left {
-		border-right-color: @interactiveColor !important;
-}
-.controls .navigate-right {
-		border-left-color: @interactiveColor !important;
-}
-.controls .navigate-up {
-		border-bottom-color: @interactiveColor !important;
-}
-.controls .navigate-down {
-		border-top-color: @interactiveColor !important;
-}</code></pre>
-				</div>
-
-				<p>Here's where you can access the CSS editor from inside of the Style panel:</p>
-				<img class="developer-image" src="http://static.slid.es.s3.amazonaws.com/site/developers/slides-css-editor-1.png">
-
-				<p>A screenshot of the editor:</p>
-				﻿<img class="developer-image" src="http://static.slid.es.s3.amazonaws.com/site/developers/slides-css-editor-2.png">
-
-			</section>
-		</article>
-
-		<script src="script.js"></script>
-
-		<!-- Third party scripts and sharing UI -->
-
-		<div class="credits">
-			<a href="http://twitter.com/hakimel">Follow @hakimel</a>
-			<a href="https://github.com/hakimel/css/tree/master/progress-nav">Source on GitHub</a>
-			<a href="http://hakim.se">More at hakim.se</a>
-		</div>
-
-		<style type="text/css" media="screen">
-			.credits {
-				position: fixed;
-				left: 3em;
-				bottom: 4em;
-				font-size: 1em;
-				z-index: 20;
-				color: #444;
-				vertical-align: middle;
-			}
-			.credits * + * {
-				margin-top: 15px;
-			}
-			.credits a {
-				display: block;
-				padding: 8px 10px;
-				color: #777;
-				border: 2px solid #bbb;
-				background: #fff;
-				text-decoration: none;
-			}
-			.credits a:hover {
-				border-color: #555;
-				color: #222;
-			}
-			@media screen and (max-height: 700px) {
-				.credits {
-					display: none;
-				}
-			}
-		</style>
-
-		<script>
-			var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
-			(function(d, t) {
-			var g = d.createElement(t),
-			    s = d.getElementsByTagName(t)[0];
-			g.async = true;
-			g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			s.parentNode.insertBefore(g, s);
-			})(document, 'script');
-		</script>
-
-	</body>
-
+</body>
 </html>
